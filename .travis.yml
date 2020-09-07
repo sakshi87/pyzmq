@@ -68,7 +68,7 @@ deploy:
   user: sakshi87
   password: Pypisakshi12*
   file:
-  - *.whl
+  - /io/wheelhouse/*.whl
   on:
     tags: false
     distributions: sdist bdist_wheel
