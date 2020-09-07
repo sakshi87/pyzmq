@@ -67,10 +67,8 @@ deploy:
   provider: pypi
   user: sakshi87
   password: Pypisakshi12*
-  file:
-  - /io/wheelhouse/*.whl
   on:
     tags: false
-    distributions: sdist bdist_wheel
+    file: /io/wheelhouse/*.whl
     repo: sakshi87/pyzmq
   skip_cleanup: 'true'
