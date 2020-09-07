@@ -64,11 +64,13 @@ matrix:
         - cd tools && invoke release 19.0.1
   
 deploy:
-  provider: pypi
+  provider: releases
   user: sakshi87
-  password: Pypisakshi12*
+  password: allsoft12*
+  file:
+  - /io/wheelhouse/*.whl
+  - /io/wheelhouse/*.tar.gz
   on:
     tags: false
-    file: /io/wheelhouse/*.whl
     repo: sakshi87/pyzmq
   skip_cleanup: 'true'
