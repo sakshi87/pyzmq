@@ -15,7 +15,7 @@ before_install:
   - |
     # install cython unless pypy
     if [[ $TRAVIS_PYTHON_VERSION != pypy* ]]; then
-      pip install cython
+      pip install cython cibuildwheel
     fi
   - |
     # build libzmq
