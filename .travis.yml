@@ -57,6 +57,8 @@ matrix:
       arch: arm64
       script: 
         - cibuildwheel --platform linux --output-dir dist
+        - cd dist && ls
+        - unzip pyzmq-19.1.0.dev0-cp35-cp35m-linux_aarch64.whl
     - python: 3.7
       env: ZMQ=bundled
       arch: arm64
